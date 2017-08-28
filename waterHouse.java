@@ -17,13 +17,13 @@ public class waterHouse {
 	     ST<Double, Edge> k = new ST<Double, Edge>();
 	     for (Edge e : mst.edges()) 
 	     {
-	    	 k.put(e.weight(), e);
+	    	k.put(e.weight(), e);
 	     }
 	     
-		 for(Double j: k.keys())
-		 {
-			 StdOut.println(k.get(j));
-		 }
+	     for(Double j: k.keys())
+	     {
+		StdOut.println(k.get(j));
+	     }
 	     
 		
 	}
